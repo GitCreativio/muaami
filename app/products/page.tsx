@@ -6,7 +6,7 @@ export default function ProductsPage() {
     <div className="w-full bg-black">
       {/* HERO SECTION */}
       <section
-        className="relative flex flex-col justify-center items-center min-h-screen pt-32 px-6 md:px-16 lg:px-24 
+        className="relative flex flex-col justify-center items-center min-h-screen  px-6 md:px-16 lg:px-24 
   bg-[url('/images/hero.jpeg')] bg-cover bg-center bg-no-repeat"
       >
         {/* Overlay Gradient for readability */}

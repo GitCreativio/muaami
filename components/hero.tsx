@@ -37,6 +37,10 @@ export default function HeroSection() {
         {/* Decorative glow circle */}
         <div className="absolute -bottom-10 right-0 w-72 h-72 bg-green-500/30 rounded-full blur-3xl"></div>
       </div>
+      <div
+          className="absolute bottom-0 left-0 right-0 h-32 
+    bg-gradient-to-b from-transparent to-black"
+        ></div>
     </section>
   );
 }

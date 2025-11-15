@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const AboutPage = () => {
   return (
@@ -20,16 +21,16 @@ const AboutPage = () => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam
             saepe recusandae assumenda laboriosam quidem praesentium quia,
           </p>
-          <button className="mt-6 px-8 py-3 bg-white/20 text-white font-semibold rounded-full border border-white/40 hover:bg-white hover:text-green-700 cursor-pointer transition duration-300 backdrop-blur-md">
+          <Link href={'/products'} className="mt-6 px-8 py-3 bg-white/20 text-white font-semibold rounded-full border border-white/40 hover:bg-white hover:text-green-700 cursor-pointer transition duration-300 backdrop-blur-md">
             Explore
-          </button>
+          </Link>
         </div>
 
         {/* Hero Image (Right Side) */}
         <div className=" relative sm:static   flex-1 md:mt-0 flex justify-center  md:justify-end">
-          <div className="absolute  -bottom-20  h-[400px]  w-[400px]  sm:w-80 md:w-96 lg:w-1/2 md:h-300  md:-top-80  md:right-0 ">
+          <div className="absolute  -bottom-20  h-[400px]  w-[400px]  sm:w-80 md:w-96 lg:w-1/2 md:h-200  md:-top-33  md:right-0 ">
             <Image
-              src="/images/hero/hero4.png" // 🧃 replace with your product image path
+              src="/images/hero/hero4.webp" // 🧃 replace with your product image path
               alt="MuAami Grape Juice Bottle"
               fill
               priority
