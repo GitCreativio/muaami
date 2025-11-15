@@ -14,10 +14,13 @@ export default function HeroSection() {
           <span className="text-green-400">Muaami Mint Lime</span>
         </h1>
         <p className="text-gray-300 font-mono text-lg max-w-md leading-relaxed">
-          100% Pure, Natural & Delicious — Experience the freshness of real
-          grapes in every sip.
+          Cool mint blended with zesty lime — a crisp, refreshing burst that
+          energizes every sip.
         </p>
-        <Link href={'/products'} className="mt-6 px-8 py-3 bg-white/20 text-white font-semibold rounded-full border border-white/40 hover:bg-white hover:text-green-700 cursor-pointer transition duration-300 backdrop-blur-md">
+        <Link
+          href={"/products"}
+          className="mt-6 px-8 py-3 bg-white/20 text-white font-semibold rounded-full border border-white/40 hover:bg-white hover:text-green-700 cursor-pointer transition duration-300 backdrop-blur-md"
+        >
           Explore
         </Link>
       </div>
@@ -38,9 +41,9 @@ export default function HeroSection() {
         <div className="absolute -bottom-10 right-0 w-72 h-72 bg-green-500/30 rounded-full blur-3xl"></div>
       </div>
       <div
-          className="absolute bottom-0 left-0 right-0 h-32 
+        className="absolute bottom-0 left-0 right-0 h-32 
     bg-gradient-to-b from-transparent to-black"
-        ></div>
+      ></div>
     </section>
   );
 }
