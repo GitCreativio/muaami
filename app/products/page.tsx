@@ -1,4 +1,5 @@
 "use client";
+import { hero3 } from "@/public/base64/hero3";
 import Image from "next/image";
 
 export default function ProductsPage() {
@@ -7,10 +8,11 @@ export default function ProductsPage() {
       {/* HERO SECTION */}
       <section
         className="relative flex flex-col justify-center items-center min-h-screen  px-6 md:px-16 lg:px-24 
-  bg-[url('/images/hero.jpeg')] bg-cover bg-center bg-no-repeat"
+   bg-cover bg-center bg-no-repeat"
+   style={{backgroundImage:`url(${hero3})`}}
       >
         {/* Overlay Gradient for readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-green-900/40 to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-black/70 via-green-900/40 to-transparent"></div>
 
         {/* Decorative Floating Glows */}
         <div className="absolute top-10 left-10 w-32 h-32 bg-fuchsia-500/20 blur-3xl rounded-full "></div>
