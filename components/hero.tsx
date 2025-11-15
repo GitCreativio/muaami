@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { hero1 } from "../public/base64/hero1";
 
 export default function HeroSection() {
   return (
@@ -29,7 +30,7 @@ export default function HeroSection() {
       <div className=" relative sm:static   flex-1 md:mt-0 flex justify-center  md:justify-end">
         <div className="absolute  -bottom-20  h-[400px]  w-[400px]  sm:w-80 md:w-96 lg:w-1/2 md:h-300  md:-top-80  md:right-0 ">
           <Image
-            src="/images/hero/hero3.png" // 🧃 replace with your product image path
+            src={hero1} // 🧃 replace with your product image path
             alt="MuAami Grape Juice Bottle"
             fill
             priority
