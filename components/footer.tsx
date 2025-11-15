@@ -1,7 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaTwitter, FaLeaf, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaLeaf,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -57,13 +65,20 @@ const Footer = () => {
               Contact Info
             </h2>
             <ul className="space-y-3 text-green-800 text-sm">
-              <li className="flex items-center justify-center md:justify-start gap-2">
-                <FaMapMarkerAlt className="text-green-600" />
-                <span>MP ROAD, ARAPUZHA, Pantheeramkavu, <br />Kozhikode,  Kerala 673019</span>
+              <li className="flex items-start md:items-start justify-center md:justify-start gap-2">
+                <FaMapMarkerAlt className="text-green-600 mt-1" />
+                <span className="leading-snug">
+                  MP ROAD, ARAPUZHA, Pantheeramkavu,
+                  <br />
+                  Kozhikode, Kerala 673019
+                </span>
               </li>
               <li className="flex items-center justify-center md:justify-start gap-2">
                 <FaPhoneAlt className="text-green-600" />
-                <a href="tel:+919633155015" className="hover:text-green-600 transition">
+                <a
+                  href="tel:+919633155015"
+                  className="hover:text-green-600 transition"
+                >
                   +91 9633155015, +91 7510155015
                 </a>
               </li>
@@ -89,8 +104,14 @@ const Footer = () => {
             </p>
             <div className="flex justify-center md:justify-start gap-5">
               {[
-                { icon: <FaFacebookF />, href: "https://www.facebook.com/muaamiaahafood/" },
-                { icon: <FaInstagram />, href: "https://www.instagram.com/muaami_india/" },
+                {
+                  icon: <FaFacebookF />,
+                  href: "https://www.facebook.com/muaamiaahafood/",
+                },
+                {
+                  icon: <FaInstagram />,
+                  href: "https://www.instagram.com/muaami_india/",
+                },
                 { icon: <FaTwitter />, href: "#" },
               ].map((social, i) => (
                 <Link

@@ -78,7 +78,7 @@ export default function FindYourTasteSection() {
               <p className="text-gray-300 max-w-xs">{p.desc}</p>
 
               <Link
-                href={p.link}
+                href={'/products'}
                 className="px-6 py-2 border border-green-600 text-green-400 rounded-full hover:bg-green-500 hover:text-black transition-all duration-300"
               >
                 Explore
