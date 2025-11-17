@@ -43,7 +43,7 @@ export default function ProductsPage() {
         </div>
         <div
           className="absolute bottom-0 left-0 right-0 h-32 
-    bg-gradient-to-b from-transparent to-black"
+    bg-linear-to-b from-transparent to-black"
         ></div>
       </section>
 
