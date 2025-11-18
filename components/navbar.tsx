@@ -45,8 +45,8 @@ export default function Navbar(): React.JSX.Element {
         duration: 0.3,
         ease: "linear", // smooth easeOutQuart
       }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        hidden ? "-translate-y-full " : "translate-y-0 bg-black/70 "
+      className={`fixed top-0 left-0 right-0 z-50 bg-none transition-all duration-500 ${
+        hidden ? "-translate-y-full " : "translate-y-0 bg-white backdrop-blur-2xl"
       }   `}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-10 py-4">
@@ -63,7 +63,7 @@ export default function Navbar(): React.JSX.Element {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-10 lg:gap-14 text-white font-medium">
+        <ul className="hidden md:flex gap-10 lg:gap-14 text-black font-medium">
           {navItems.map((item) => (
             <motion.li
               key={item.name}
@@ -84,7 +84,7 @@ export default function Navbar(): React.JSX.Element {
         <button
           onClick={() => setOpen(!open)}
           aria-label="Toggle Menu"
-          className="md:hidden text-white hover:text-green-400 transition-colors z-50"
+          className="md:hidden text-black hover:text-green-400 transition-colors z-50"
         >
           {open ? <X size={28} /> : <Menu size={28} />}
         </button>
@@ -95,9 +95,9 @@ export default function Navbar(): React.JSX.Element {
         initial={false}
         animate={{ height: open ? "auto" : 0, opacity: open ? 1 : 0 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
-        className="md:hidden overflow-hidden bg-black/95 backdrop-blur-2xl border-t border-green-500/20"
+        className="md:hidden overflow-hidden bg-white/95 backdrop-blur-2xl border-t border-green-500/20"
       >
-        <ul className="flex flex-col items-center space-y-6 py-8 text-white">
+        <ul className="flex flex-col items-center space-y-6 py-8 text-black">
           {navItems.map((item, idx) => (
             <motion.li
               key={item.name}
