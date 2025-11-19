@@ -12,7 +12,7 @@ const AboutPage = () => {
   return (
     <main className=" min-h-screen      text-black">
       <section
-        style={{ background: `url('${hero2}')` , backgroundSize:"cover"}}
+        style={{ background: `url('${hero2}')` , backgroundSize:"cover" , backgroundPosition:"center"}}
         className="relative flex    min-h-screen  items-center justify-between  px-6 md:px-16 lg:px-24 py-20 pt-40 sm:pt-32  bg-cover bg-center text-white overflow-hidden"
       >
         <div className=" absolute inset-0 bg-black/40"></div>
