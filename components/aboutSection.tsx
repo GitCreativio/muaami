@@ -69,19 +69,19 @@ export default function AboutSection() {
         {/* Only Image is animated */}
         <div
           ref={imageRef}     // 👈 GSAP applies only here
-          className="relative w-[320px] sm:w-[380px] md:w-[420px] lg:w-[500px] aspect-square overflow-hidden"
+          className="relative  w-[320px] sm:w-[380px] md:w-[420px] lg:w-[500px] aspect-square overflow-hidden"
         >
           <Image
             src="/images/about.png"
             alt="Maummi Mint Aaha Drink"
             fill
-            className="object-cover"
+            className="object-cover "
             priority
           />
         </div>
 
         {/* Splash remains fixed to right side */}
-        <div className="absolute  -right-10 -top-20 -z-10 w-[120%] h-[120%] bg-[url('/images/splash2.png')] opacity-80 bg-cover bg-center "></div>
+        <div className="absolute  -right-5 bottom-10 -z-10 w-[110%] h-[70%] bg-[url('/images/sand.png')] opacity-80 bg-cover bg-center "></div>
       </div>
     </section>
   );
