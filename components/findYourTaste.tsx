@@ -9,35 +9,38 @@ gsap.registerPlugin(ScrollTrigger);
 
 const products = [
   {
-    name: "Grape Juice",
-    img: "/images/products/Maummi_Grapes.webp",
-    desc: "Pure grape goodness that refreshes your senses.",
-  },
-  {
-    name: "Lemon Fizz",
-    img: "/images/products/Maummi_lemonfizz.webp",
-    desc: "Zesty lemon with a crisp, sparkling kick.",
-  },
-  {
     name: "AAHA",
     img: "/images/products/maummi_mint_aaha.webp",
     desc: "Cool mint fusion with a refreshing burst.",
+  },
+  {
+    name: "Grape Juice",
+    img: "/images/products/Maummi_Grapes.webp",
+    desc: "Pure grape goodness that refreshes your senses.",
   },
   {
     name: "Passion Fruit Fizz",
     img: "/images/products/Maummi_Passion_Fruit.webp",
     desc: "Exotic passion fruit with vibrant fizz.",
   },
-  {
-    name: "Salt Lemon",
-    img: "/images/products/Maummi_salt_lemon.webp",
-    desc: "Bold citrus balanced with a salty edge.",
-  },
-  {
-    name: "മസാല മോര്",
-    img: "/images/products/mummi_masala_mooru.webp",
-    desc: "Spiced buttermilk with traditional masala magic.",
-  },
+
+  // {
+  //   name: "Lemon Fizz",
+  //   img: "/images/products/Maummi_lemonfizz.webp",
+  //   desc: "Zesty lemon with a crisp, sparkling kick.",
+  // },
+
+  
+  // {
+  //   name: "Salt Lemon",
+  //   img: "/images/products/Maummi_salt_lemon.webp",
+  //   desc: "Bold citrus balanced with a salty edge.",
+  // },
+  // {
+  //   name: "മസാല മോര്",
+  //   img: "/images/products/mummi_masala_mooru.webp",
+  //   desc: "Spiced buttermilk with traditional masala magic.",
+  // },
 ];
 
 export default function FindYourTasteSection() {
@@ -223,6 +226,11 @@ export default function FindYourTasteSection() {
             </div>
           ))}
         </div>
+      </div>
+      <div className=" py-20 flex justify-center items-center">
+        <a href="/products" className="  text-black  hover:-translate-y-1 duration-300 px-10 py-2 rounded-full ">
+          view more →
+        </a>
       </div>
     </section>
   );

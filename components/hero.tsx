@@ -36,7 +36,7 @@ export default function HeroSection() {
       {/* bg overlay  */}
       <div
         ref={bgRef}
-        className="absolute inset-0 bg-[url('/hero.jpg')] bg-fill bg-right  md:bg-center opacity-90 -z-10"
+        className="absolute inset-0 bg-[url('/images/home.png')] bg-fill bg-right  md:bg-center opacity-90 -z-10"
       />
 
       <motion.div
@@ -88,7 +88,7 @@ export default function HeroSection() {
 
         {/* <div className="absolute -bottom-10 right-0 w-72 h-72 bg-green-500/30 rounded-full blur-3xl"></div> */}
       </div>
-        <div className="absolute  inset-0 bg-black/30"></div>
+        <div className="absolute  inset-0 bg-black/40"></div>
 
     </section>
   );
