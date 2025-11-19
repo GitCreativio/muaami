@@ -11,7 +11,10 @@ import OurStory from "@/components/ourstory";
 const AboutPage = () => {
   return (
     <main className=" min-h-screen      text-black">
-      <section className="relative flex  bg-[url('/images/hero/hero5.jpg')]   min-h-screen  items-center justify-between  px-6 md:px-16 lg:px-24 py-20 pt-40 sm:pt-32  bg-cover bg-center text-white overflow-hidden">
+      <section
+        style={{ background: `url('${hero2}')` , backgroundSize:"cover"}}
+        className="relative flex    min-h-screen  items-center justify-between  px-6 md:px-16 lg:px-24 py-20 pt-40 sm:pt-32  bg-cover bg-center text-white overflow-hidden"
+      >
         <div className=" absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 w-full  flex justify-center items-center flex-col  space-y-6 text-center md:pr-10">
           <h1 className="text-4xl font-sans md:text-6xl  font-extrabold ">

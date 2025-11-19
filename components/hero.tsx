@@ -36,7 +36,8 @@ export default function HeroSection() {
       {/* bg overlay  */}
       <div
         ref={bgRef}
-        className="absolute inset-0 bg-[url('/images/home.png')] bg-fill bg-right  md:bg-center opacity-90 -z-10"
+        className="absolute inset-0 bg-[url('/images/home.png')]  md:bg-center opacity-90 -z-10"
+        style={{background:`url('${hero1}')`, backgroundSize:"cover", backgroundPosition:"right"}}
       />
 
       <motion.div
@@ -50,7 +51,7 @@ export default function HeroSection() {
             Refresh Your Day with <br />
             <span className="text-green-400">Muaami Drinks</span>
           </h1>
-          <p className="text-gray-300 font-mono text-lg max-w-md leading-relaxed">
+          <p className="text-gray-200 font-mono text-lg max-w-md leading-relaxed">
             Taste the freshness of our naturally inspired flavors.
           </p>
           <Link
